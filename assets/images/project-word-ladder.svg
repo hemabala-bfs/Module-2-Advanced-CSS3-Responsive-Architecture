@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" role="img" aria-labelledby="wordLadderTitle wordLadderDesc">
+  <title id="wordLadderTitle">Word Ladder BFS Solver Architecture Diagram</title>
+  <desc id="wordLadderDesc">Visual representation of breadth-first search traversing states from start word to target word in minimum transformation steps.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0b18" />
+      <stop offset="100%" stop-color="#1e1938" />
+    </linearGradient>
+    <linearGradient id="activeNodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="targetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect x="1" y="1" width="598" height="358" rx="15" fill="none" stroke="#31285c" stroke-width="1.5" />
+
+  <!-- Breadth First Search Title Header -->
+  <rect x="25" y="25" width="550" height="42" rx="8" fill="#151226" stroke="#a855f7" stroke-width="1" />
+  <circle cx="45" cy="46" r="5" fill="#c084fc" />
+  <text x="60" y="51" font-family="monospace" font-size="14" font-weight="bold" fill="#f5f3ff">BFS Algorithm: Shortest Transformation Path</text>
+  <text x="470" y="51" font-family="monospace" font-size="12" fill="#c4b5fd">Queue O(V+E)</text>
+
+  <!-- Graph Connections -->
+  <g stroke="#4c3d7e" stroke-width="2" stroke-dasharray="4 3">
+    <!-- Level 0 to Level 1 -->
+    <line x1="100" y1="180" x2="220" y2="110" />
+    <line x1="100" y1="180" x2="220" y2="180" />
+    <line x1="100" y1="180" x2="220" y2="250" />
+    <!-- Level 1 to Level 2 -->
+    <line x1="220" y1="110" x2="350" y2="140" />
+    <line x1="220" y1="180" x2="350" y2="180" />
+    <line x1="220" y1="250" x2="350" y2="220" />
+    <!-- Level 2 to Target -->
+    <line x1="350" y1="180" x2="490" y2="180" />
+  </g>
+
+  <!-- Optimal Path Highlight -->
+  <g stroke="#c084fc" stroke-width="3">
+    <line x1="100" y1="180" x2="220" y2="180" />
+    <line x1="220" y1="180" x2="350" y2="180" />
+    <line x1="350" y1="180" x2="490" y2="180" />
+  </g>
+
+  <!-- Level 0: Start Node -->
+  <g transform="translate(100, 180)">
+    <circle r="36" fill="#201a3d" stroke="#c084fc" stroke-width="3" filter="url(#glow)" />
+    <text y="-5" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="13" fill="#c084fc">START</text>
+    <text y="14" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#ffffff">COLD</text>
+  </g>
+
+  <!-- Level 1: Neighbors -->
+  <g transform="translate(220, 110)">
+    <circle r="26" fill="#201a3d" stroke="#5b488e" stroke-width="1.5" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-size="12" fill="#ddd6fe">BOLD</text>
+  </g>
+  <g transform="translate(220, 180)">
+    <circle r="32" fill="url(#activeNodeGrad)" stroke="#e9d5ff" stroke-width="2" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#ffffff">CORD</text>
+  </g>
+  <g transform="translate(220, 250)">
+    <circle r="26" fill="#201a3d" stroke="#5b488e" stroke-width="1.5" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-size="12" fill="#ddd6fe">FOLD</text>
+  </g>
+
+  <!-- Level 2: Intermediates -->
+  <g transform="translate(350, 140)">
+    <circle r="26" fill="#201a3d" stroke="#5b488e" stroke-width="1.5" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-size="12" fill="#ddd6fe">WORD</text>
+  </g>
+  <g transform="translate(350, 180)">
+    <circle r="32" fill="url(#activeNodeGrad)" stroke="#e9d5ff" stroke-width="2" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#ffffff">CARD</text>
+  </g>
+  <g transform="translate(350, 220)">
+    <circle r="26" fill="#201a3d" stroke="#5b488e" stroke-width="1.5" />
+    <text y="5" text-anchor="middle" font-family="monospace" font-size="12" fill="#ddd6fe">CART</text>
+  </g>
+
+  <!-- Level 3: Target Word -->
+  <g transform="translate(490, 180)">
+    <circle r="38" fill="url(#targetGrad)" stroke="#a7f3d0" stroke-width="3" filter="url(#glow)" />
+    <text y="-6" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="13" fill="#ffffff">TARGET</text>
+    <text y="14" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#ffffff">WARM</text>
+  </g>
+
+  <!-- Status Bar at Bottom -->
+  <rect x="25" y="305" width="550" height="32" rx="6" fill="#151226" />
+  <text x="40" y="326" font-family="monospace" font-size="12" fill="#c084fc">Path Found: COLD → CORD → CARD → WARD → WARM</text>
+  <text x="480" y="326" font-family="monospace" font-size="12" fill="#34d399">Steps: 4</text>
+</svg>

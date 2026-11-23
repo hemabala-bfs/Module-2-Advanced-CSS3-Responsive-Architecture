@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" role="img" aria-labelledby="burnoutTitle burnoutDesc">
+  <title id="burnoutTitle">Student Burnout Prediction Machine Learning Architecture</title>
+  <desc id="burnoutDesc">Infographic demonstrating Random Forest ensemble classification for predicting student burnout risk based on academic and lifestyle parameters.</desc>
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0b18" />
+      <stop offset="100%" stop-color="#1e1938" />
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="riskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bgGrad2)" />
+  <rect x="1" y="1" width="598" height="358" rx="15" fill="none" stroke="#31285c" stroke-width="1.5" />
+
+  <!-- Header -->
+  <rect x="25" y="25" width="550" height="42" rx="8" fill="#151226" stroke="#a855f7" stroke-width="1" />
+  <circle cx="45" cy="46" r="5" fill="#c084fc" />
+  <text x="60" y="51" font-family="monospace" font-size="14" font-weight="bold" fill="#f5f3ff">Random Forest Ensemble: Multi-Feature Classification</text>
+  <text x="460" y="51" font-family="monospace" font-size="12" fill="#c4b5fd">Scikit-Learn</text>
+
+  <!-- Left: Input Features -->
+  <g transform="translate(30, 95)">
+    <rect width="130" height="185" rx="8" fill="#151226" stroke="#31285c" stroke-width="1.5" />
+    <text x="15" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#c084fc">INPUT METRICS</text>
+    
+    <rect x="10" y="38" width="110" height="28" rx="4" fill="#201a3d" />
+    <text x="18" y="56" font-family="monospace" font-size="11" fill="#ddd6fe">Study Hours</text>
+
+    <rect x="10" y="72" width="110" height="28" rx="4" fill="#201a3d" />
+    <text x="18" y="90" font-family="monospace" font-size="11" fill="#ddd6fe">Sleep Quality</text>
+
+    <rect x="10" y="106" width="110" height="28" rx="4" fill="#201a3d" />
+    <text x="18" y="124" font-family="monospace" font-size="11" fill="#ddd6fe">Assignment Load</text>
+
+    <rect x="10" y="140" width="110" height="28" rx="4" fill="#201a3d" />
+    <text x="18" y="158" font-family="monospace" font-size="11" fill="#ddd6fe">Stress Index</text>
+  </g>
+
+  <!-- Flow Arrows from Features to Forest -->
+  <g stroke="#6b5b95" stroke-width="2">
+    <line x1="160" y1="188" x2="195" y2="188" stroke-dasharray="3 3" />
+    <polygon points="195,185 202,188 195,191" fill="#6b5b95" />
+  </g>
+
+  <!-- Middle: Random Forest Trees -->
+  <g transform="translate(205, 95)">
+    <rect width="210" height="185" rx="8" fill="#151226" stroke="#a855f7" stroke-width="1.5" />
+    <text x="18" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#c084fc">DECISION TREE ENSEMBLE</text>
+
+    <!-- Mini Tree 1 -->
+    <g transform="translate(35, 45)">
+      <circle cx="20" cy="15" r="8" fill="url(#treeGrad)" />
+      <line x1="20" y1="23" x2="8" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <line x1="20" y1="23" x2="32" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <circle cx="8" cy="40" r="6" fill="#c084fc" />
+      <circle cx="32" cy="40" r="6" fill="#10b981" />
+      <text x="20" y="65" text-anchor="middle" font-family="monospace" font-size="10" fill="#c4b5fd">Tree 1</text>
+    </g>
+
+    <!-- Mini Tree 2 -->
+    <g transform="translate(105, 45)">
+      <circle cx="20" cy="15" r="8" fill="url(#treeGrad)" />
+      <line x1="20" y1="23" x2="8" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <line x1="20" y1="23" x2="32" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <circle cx="8" cy="40" r="6" fill="#f59e0b" />
+      <circle cx="32" cy="40" r="6" fill="#10b981" />
+      <text x="20" y="65" text-anchor="middle" font-family="monospace" font-size="10" fill="#c4b5fd">Tree 2</text>
+    </g>
+
+    <!-- Mini Tree N -->
+    <g transform="translate(165, 45)">
+      <circle cx="15" cy="15" r="8" fill="url(#treeGrad)" />
+      <line x1="15" y1="23" x2="5" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <line x1="15" y1="23" x2="25" y2="40" stroke="#a855f7" stroke-width="1.5" />
+      <circle cx="5" cy="40" r="6" fill="#f59e0b" />
+      <circle cx="25" cy="40" r="6" fill="#ef4444" />
+      <text x="15" y="65" text-anchor="middle" font-family="monospace" font-size="10" fill="#c4b5fd">Tree N</text>
+    </g>
+
+    <!-- Majority Vote Aggregator Box -->
+    <rect x="20" y="125" width="170" height="42" rx="6" fill="#201a3d" stroke="#c084fc" stroke-width="1" />
+    <text x="105" y="145" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#c084fc">Majority Voting</text>
+    <text x="105" y="159" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ddd6fe">Aggregates Sub-Estimators</text>
+  </g>
+
+  <!-- Flow to Output -->
+  <g stroke="#6b5b95" stroke-width="2">
+    <line x1="415" y1="188" x2="445" y2="188" stroke-dasharray="3 3" />
+    <polygon points="445,185 452,188 445,191" fill="#6b5b95" />
+  </g>
+
+  <!-- Right: Output Prediction -->
+  <g transform="translate(450, 95)">
+    <rect width="120" height="185" rx="8" fill="#151226" stroke="#10b981" stroke-width="1.5" />
+    <text x="12" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#10b981">PREDICTION</text>
+    
+    <circle cx="60" cy="75" r="30" fill="#064e3b" stroke="#34d399" stroke-width="2" />
+    <text x="60" y="79" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#ffffff">ACCURATE</text>
+
+    <rect x="10" y="120" width="100" height="24" rx="4" fill="#201a3d" />
+    <text x="60" y="136" text-anchor="middle" font-family="monospace" font-size="11" fill="#34d399">Low Burnout</text>
+
+    <rect x="10" y="148" width="100" height="24" rx="4" fill="#201a3d" />
+    <text x="60" y="164" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbbf24">High Risk</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="25" y="305" width="550" height="32" rx="6" fill="#151226" />
+  <text x="40" y="326" font-family="monospace" font-size="12" fill="#c084fc">Pipeline: Preprocessing → Train/Test Split → Random Forest Classifier</text>
+  <text x="480" y="326" font-family="monospace" font-size="12" fill="#a855f7">Model: RF</text>
+</svg>

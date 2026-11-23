@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d0b18">
+  <title>Projects &amp; Research | Hemabala J - BFS Solver &amp; Burnout Prediction</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Featured software and AI/ML projects by Hemabala J: Word Ladder BFS Solver, Student Burnout Prediction with Random Forest, and academic research implementations.">
+  <meta name="author" content="Hemabala J">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL Placeholder -->
+  <link rel="canonical" href="https://hemabala-bfs.github.io/portfolio/projects.html">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:site_name" content="Hemabala J Portfolio">
+  <meta property="og:title" content="Projects &amp; Research | Hemabala J">
+  <meta property="og:description" content="Technical case studies: Word Ladder BFS Solver and Student Burnout Prediction with Random Forest Classification.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hemabala-bfs.github.io/portfolio/projects.html">
+  <meta property="og:image" content="assets/images/project-word-ladder.svg">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects &amp; Research | Hemabala J">
+  <meta name="twitter:description" content="Algorithmic problem solving with BFS and Machine Learning classification with Random Forest.">
+  <meta name="twitter:image" content="assets/images/project-word-ladder.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Theme Init Script (Prevents Flash of Unstyled Theme) -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('portfolio_theme_preference');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        const theme = (savedTheme === 'light' || savedTheme === 'dark') ? savedTheme : (systemPrefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Script (Deferred for Performance) -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Semantic Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Hemabala J - Home">
+        <img src="assets/images/favicon.svg" alt="" class="brand-logo" width="36" height="36" aria-hidden="true">
+        <span>Hemabala J</span>
+      </a>
+
+      <div class="nav-actions">
+        <!-- Semantic Navigation Landmark -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu" id="primary-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to light theme" title="Switch to light theme">
+          <svg class="theme-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 0 0-1.9 19.8 10 10 0 0 0 11.5-11.5A10 10 0 0 0 12.3 2zm-.3 18a8 8 0 1 1 6.3-12.9 8.1 8.1 0 0 1-6.3 12.9z"/></svg>
+        </button>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Semantic Main Landmark -->
+  <main id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="page-header">
+        <span class="section-badge">Case Studies &amp; Implementations</span>
+        <h1>Featured &amp; Academic Projects</h1>
+        <p>
+          In-depth technical implementations spanning graph traversal algorithms, heuristic searches, and supervised machine learning classification.
+        </p>
+      </header>
+
+      <!-- Accessible Filter Controls -->
+      <section aria-labelledby="project-filter-heading">
+        <h2 id="project-filter-heading" class="sr-only">Filter Projects by Domain</h2>
+        <div class="filter-controls" data-filter-group="projects" data-filter-target=".project-card" data-filter-announcer="projects-live-status">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">
+            All Projects
+          </button>
+          <button type="button" class="filter-btn" data-filter="algo" aria-pressed="false">
+            Algorithms &amp; Graphs
+          </button>
+          <button type="button" class="filter-btn" data-filter="ml" aria-pressed="false">
+            Machine Learning
+          </button>
+        </div>
+
+        <!-- Live Status Announcer for Screen Readers -->
+        <div id="projects-live-status" class="sr-only" role="status" aria-live="polite">
+          Showing all projects.
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid mt-lg">
+        
+        <!-- ==================================================================
+             Project 1: Word Ladder Puzzle Solver using BFS
+             ================================================================== -->
+        <article class="project-card" data-category="algo" id="project-word-ladder">
+          <div class="project-media">
+            <img src="assets/images/project-word-ladder.svg" alt="Word Ladder BFS solver architectural diagram depicting graph traversal from COLD to WARM" width="600" height="360" loading="lazy">
+          </div>
+          <div class="project-content">
+            <header class="project-header">
+              <span class="project-category">Graph Theory &bull; Breadth-First Search</span>
+              <h2 class="project-title">Word Ladder Puzzle Solver using BFS</h2>
+            </header>
+            
+            <p class="project-description">
+              A computer science puzzle solver that calculates the minimum number of single-letter transformation steps required to convert a starting word into a target word through a validated dictionary.
+            </p>
+
+            <dl class="project-specs">
+              <dt>Core Algorithm &amp; Strategy</dt>
+              <dd>Breadth-First Search (BFS) for state-space traversal</dd>
+              <dt>Optimality Guarantee</dt>
+              <dd>Guarantees the shortest path in unweighted graph transitions</dd>
+              <dt>Data Structures</dt>
+              <dd>FIFO State Queue, Hash Set for O(1) dictionary lookup, Visited tracker</dd>
+            </dl>
+
+            <h3 class="highlights-title">Key Engineering Highlights:</h3>
+            <ul class="list-styled">
+              <li><strong>Level-by-Level Expansion:</strong> Enqueues intermediate valid words to systematically inspect nearest neighbors before exploring deeper paths.</li>
+              <li><strong>Cycle Prevention:</strong> Maintains an active set of visited words to prevent infinite recursive transitions and redundant evaluations.</li>
+              <li><strong>Path Reconstruction:</strong> Stores predecessor references alongside states to retrace and output the complete sequence (e.g., <code>COLD &rarr; CORD &rarr; CARD &rarr; WARD &rarr; WARM</code>).</li>
+            </ul>
+
+            <ul class="project-tags" aria-label="Technologies used in Word Ladder Solver">
+              <li class="tag-badge">BFS Algorithm</li>
+              <li class="tag-badge">Graph Traversal</li>
+              <li class="tag-badge">Queue ADT</li>
+              <li class="tag-badge">Python</li>
+              <li class="tag-badge">Complexity Optimization</li>
+            </ul>
+
+            <div class="project-actions">
+              <a href="https://github.com/hemabala-bfs/WordLadderPuzzleSolver-BFS" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                View Source on GitHub
+                <span class="sr-only">(opens in a new window)</span>
+                <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================================================================
+             Project 2: Student Burnout Prediction using Random Forest
+             ================================================================== -->
+        <article class="project-card" data-category="ml" id="project-burnout-prediction">
+          <div class="project-media">
+            <img src="assets/images/project-burnout.svg" alt="Machine learning diagram showing student burnout prediction pipeline with Random Forest classifier" width="600" height="360" loading="lazy">
+          </div>
+          <div class="project-content">
+            <header class="project-header">
+              <span class="project-category">Machine Learning &bull; Classification</span>
+              <h2 class="project-title">Student Burnout Prediction using Random Forest</h2>
+            </header>
+            
+            <p class="project-description">
+              A predictive machine learning application designed to assess academic burnout risks among students by analyzing lifestyle habits, study duration, and workload factors.
+            </p>
+
+            <dl class="project-specs">
+              <dt>Model Architecture</dt>
+              <dd>Random Forest Classification (Ensemble of Decision Trees)</dd>
+              <dt>Core Method</dt>
+              <dd>Bootstrap Aggregating (Bagging) with random feature subspace sampling</dd>
+              <dt>Technical Stack</dt>
+              <dd>Python, Scikit-Learn, Pandas, NumPy, Predictive Analytics</dd>
+            </dl>
+
+            <h3 class="highlights-title">Key Engineering Highlights:</h3>
+            <ul class="list-styled">
+              <li><strong>Ensemble Robustness:</strong> Reduces high variance inherent in individual decision trees by aggregating predictions via majority voting.</li>
+              <li><strong>Multivariate Feature Analysis:</strong> Evaluates correlations between daily sleep hours, academic pressure, extracurricular balance, and burnout likelihood.</li>
+              <li><strong>Overfitting Mitigation:</strong> Leverages feature randomness at each split to construct uncorrelated estimators and improve generalization on test cohorts.</li>
+            </ul>
+
+            <ul class="project-tags" aria-label="Technologies used in Student Burnout Prediction">
+              <li class="tag-badge">Random Forest</li>
+              <li class="tag-badge">Scikit-Learn</li>
+              <li class="tag-badge">Supervised Learning</li>
+              <li class="tag-badge">Data Preprocessing</li>
+              <li class="tag-badge">Feature Importance</li>
+            </ul>
+
+            <div class="project-actions">
+              <a href="https://github.com/hemabala-bfs/student-burnout-prediction-random-forest-algorithm" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                View Source on GitHub
+                <span class="sr-only">(opens in a new window)</span>
+                <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================================================================
+             Project 3: Placeholder for Upcoming Project
+             ================================================================== -->
+        <article class="project-card" data-category="ml algo" id="project-placeholder-upcoming">
+          <div class="project-media">
+            <img src="assets/images/project-placeholder.svg" alt="Illustration representing an upcoming project under development" width="600" height="360" loading="lazy">
+          </div>
+          <div class="project-content">
+            <header class="project-header">
+              <span class="project-category">[Editable Placeholder] &bull; In Development</span>
+              <h2 class="project-title">[Placeholder: Upcoming AI / Engineering Project]</h2>
+            </header>
+            
+            <p class="project-description">
+              <em>[Editable Placeholder: Add your upcoming capstone project, semester coursework implementation, or research paper contribution here.]</em>
+            </p>
+
+            <dl class="project-specs">
+              <dt>Expected Focus</dt>
+              <dd>Deep Learning / Natural Language Processing / Full-Stack Application</dd>
+              <dt>Development Stage</dt>
+              <dd>Planning &amp; Architecture Formulation</dd>
+              <dt>Anticipated Stack</dt>
+              <dd>Python, TensorFlow / PyTorch, Modern Web Frameworks</dd>
+            </dl>
+
+            <div class="placeholder-notice card-compact mb-md">
+              <strong>How to edit this project card:</strong><br>
+              Open <code>projects.html</code> and update the title, description, specifications, and GitHub link to showcase your new project.
+            </div>
+
+            <ul class="project-tags" aria-label="Future technologies">
+              <li class="tag-badge">[Placeholder Tag 1]</li>
+              <li class="tag-badge">[Placeholder Tag 2]</li>
+              <li class="tag-badge">[Placeholder Tag 3]</li>
+            </ul>
+
+            <div class="project-actions">
+              <a href="contact.html" class="btn btn-secondary">
+                Suggest a Collaboration
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Additional Technical Context Section -->
+      <section class="section" aria-labelledby="methodology-heading">
+        <header class="section-header">
+          <span class="section-badge">Methodology</span>
+          <h2 id="methodology-heading">Project Development Principles</h2>
+          <p>
+            Every software and machine learning project in my portfolio is developed with strict adherence to rigorous engineering guidelines.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Reproducible Experiments</h3>
+            <p>
+              Data pipelines, train-test splits, and random states are fixed to ensure that machine learning classification results are verifiable and reproducible across environments.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Transparent Complexity</h3>
+            <p>
+              Algorithms are documented with explicit big-O time and space complexity evaluations to demonstrate deep comprehension of computer science foundations.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Open Source Transparency</h3>
+            <p>
+              Source code, documentation, and sample executions are published publicly on GitHub with clear README walkthroughs and setup guides.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Semantic Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Hemabala J</h2>
+          <p>
+            B.Tech in Artificial Intelligence and Machine Learning from Rajalakshmi Institute of Technology, Chennai. Focused on AI, ML, and Software Engineering.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Technical Skills</a></li>
+            <li><a href="projects.html">Projects &amp; Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="footer-nav-title">Connect</h3>
+          <p class="mb-sm">Follow and connect via professional profiles:</p>
+          <ul class="social-links" aria-label="Social media profiles">
+            <li>
+              <a href="https://linkedin.com/in/hemabala-j-9b0033326" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hemabala-bfs" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hemabala_1806/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hemabala J. All rights reserved.</p>
+        <a href="#main-content" class="back-to-top-btn">
+          Back to top
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

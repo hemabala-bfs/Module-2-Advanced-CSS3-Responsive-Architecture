@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d0b18">
+  <title>Technical Skills | Hemabala J - Artificial Intelligence &amp; Software Development</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Explore the technical skill set of Hemabala J: Machine Learning, Random Forest classification, BFS graph algorithms, Python, WCAG accessibility, and software development.">
+  <meta name="author" content="Hemabala J">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL Placeholder -->
+  <link rel="canonical" href="https://hemabala-bfs.github.io/portfolio/skills.html">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:site_name" content="Hemabala J Portfolio">
+  <meta property="og:title" content="Technical Skills | Hemabala J - AI &amp; Software Development">
+  <meta property="og:description" content="Detailed competency overview of Hemabala J: AI/ML, Graph Algorithms (BFS), Python, and Accessible Software Development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hemabala-bfs.github.io/portfolio/skills.html">
+  <meta property="og:image" content="assets/images/profile-avatar.svg">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Technical Skills | Hemabala J">
+  <meta name="twitter:description" content="AI &amp; Machine Learning, BFS Algorithms, Python, and WCAG Accessible Web Development.">
+  <meta name="twitter:image" content="assets/images/profile-avatar.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Theme Init Script (Prevents Flash of Unstyled Theme) -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('portfolio_theme_preference');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        const theme = (savedTheme === 'light' || savedTheme === 'dark') ? savedTheme : (systemPrefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Script (Deferred for Performance) -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Semantic Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Hemabala J - Home">
+        <img src="assets/images/favicon.svg" alt="" class="brand-logo" width="36" height="36" aria-hidden="true">
+        <span>Hemabala J</span>
+      </a>
+
+      <div class="nav-actions">
+        <!-- Semantic Navigation Landmark -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu" id="primary-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link" aria-current="page">Skills</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to light theme" title="Switch to light theme">
+          <svg class="theme-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 0 0-1.9 19.8 10 10 0 0 0 11.5-11.5A10 10 0 0 0 12.3 2zm-.3 18a8 8 0 1 1 6.3-12.9 8.1 8.1 0 0 1-6.3 12.9z"/></svg>
+        </button>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Semantic Main Landmark -->
+  <main id="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <header class="page-header">
+        <span class="section-badge">Technical Competencies</span>
+        <h1>Skills &amp; Technologies</h1>
+        <p>
+          A transparent, evidence-based breakdown of my core technical competencies in Artificial Intelligence, graph algorithms, software engineering, and web development.
+        </p>
+      </header>
+
+      <!-- Accessible Filter Controls (WCAG 4.1.2 Name, Role, Value) -->
+      <section aria-labelledby="filter-heading">
+        <h2 id="filter-heading" class="sr-only">Filter Skills by Category</h2>
+        <div class="filter-controls" data-filter-group="skills" data-filter-target=".skill-card" data-filter-announcer="skills-live-status">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">
+            All Competencies
+          </button>
+          <button type="button" class="filter-btn" data-filter="aiml" aria-pressed="false">
+            AI &amp; Machine Learning
+          </button>
+          <button type="button" class="filter-btn" data-filter="algorithms" aria-pressed="false">
+            Algorithms &amp; Problem Solving
+          </button>
+          <button type="button" class="filter-btn" data-filter="dev" aria-pressed="false">
+            Languages &amp; Web
+          </button>
+          <button type="button" class="filter-btn" data-filter="tools" aria-pressed="false">
+            Tools &amp; Practices
+          </button>
+        </div>
+
+        <!-- Live Announcer for Screen Readers (WCAG 4.1.3 Status Messages) -->
+        <div id="skills-live-status" class="sr-only" role="status" aria-live="polite">
+          Showing all technical competencies.
+        </div>
+      </section>
+
+      <!-- Skills Cards Grid -->
+      <div class="skills-grid mt-md">
+        
+        <!-- Skill 1: AI & ML -->
+        <article class="skill-card" data-category="aiml" id="ai-ml">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 14a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zm8-6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zM4 10a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+              </svg>
+            </div>
+            <h3>Artificial Intelligence &amp; Machine Learning</h3>
+          </div>
+          <p>
+            Supervised learning workflows with an emphasis on ensemble methods, classification architectures, and behavioral analytics.
+          </p>
+          <ul class="skill-tag-list" aria-label="Machine learning skills">
+            <li class="skill-tag">Random Forest Classifier</li>
+            <li class="skill-tag">Supervised Learning</li>
+            <li class="skill-tag">Feature Engineering</li>
+            <li class="skill-tag">Model Evaluation &amp; Accuracy</li>
+            <li class="skill-tag">Predictive Analytics</li>
+            <li class="skill-tag">Overfitting Prevention</li>
+          </ul>
+        </article>
+
+        <!-- Skill 2: Algorithms & DSA -->
+        <article class="skill-card" data-category="algorithms" id="dsa">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 3h6v3h-6v-3zm0-3h3v2h-3v-2z"/>
+              </svg>
+            </div>
+            <h3>Algorithms &amp; Data Structures</h3>
+          </div>
+          <p>
+            Applied graph traversal, search optimization, and algorithmic efficiency for computational puzzles and pathfinding.
+          </p>
+          <ul class="skill-tag-list" aria-label="Algorithm and data structure skills">
+            <li class="skill-tag">Breadth-First Search (BFS)</li>
+            <li class="skill-tag">Graph Theory &amp; Traversal</li>
+            <li class="skill-tag">State-Space Search</li>
+            <li class="skill-tag">Shortest Path Guarantees</li>
+            <li class="skill-tag">Queue Data Structure</li>
+            <li class="skill-tag">Time &amp; Space Complexity Analysis</li>
+          </ul>
+        </article>
+
+        <!-- Skill 3: Python Programming -->
+        <article class="skill-card" data-category="dev">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 14.5v-3h3v-2h-3v-3h-2v3H8v2h3v3h2z"/>
+              </svg>
+            </div>
+            <h3>Core Programming Languages</h3>
+          </div>
+          <p>
+            Foundational software programming languages used for academic projects, algorithm implementation, and mathematical scripting.
+          </p>
+          <ul class="skill-tag-list" aria-label="Programming languages">
+            <li class="skill-tag">Python (Core Language)</li>
+            <li class="skill-tag">Object-Oriented Programming (OOP)</li>
+            <li class="skill-tag">Algorithmic Scripting</li>
+            <li class="skill-tag">[Placeholder: C / C++]</li>
+            <li class="skill-tag">[Placeholder: Java]</li>
+          </ul>
+        </article>
+
+        <!-- Skill 4: Web Development & Accessibility -->
+        <article class="skill-card" data-category="dev" id="software">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.95a15.65 15.65 0 0 0-1.37-5.01A8.02 8.02 0 0 1 19.93 11zM12 4.07c1.01 1.48 1.8 3.52 2.05 6.93H9.95c.25-3.41 1.04-5.45 2.05-6.93zM4.07 13h3.95c.12 1.83.6 3.58 1.37 5.01A8.02 8.02 0 0 1 4.07 13zm0-2a8.02 8.02 0 0 1 4.54-5.01C7.84 7.42 7.36 9.17 7.24 11H4.07zm5.88 2h4.1c-.25 3.41-1.04 5.45-2.05 6.93-1.01-1.48-1.8-3.52-2.05-6.93zm4.66 5.01c.77-1.43 1.25-3.18 1.37-5.01h3.95a8.02 8.02 0 0 1-4.54 5.01z"/>
+              </svg>
+            </div>
+            <h3>Web Development &amp; HTML5 Standards</h3>
+          </div>
+          <p>
+            Building semantic, modern, and high-performance client interfaces using standard web technologies.
+          </p>
+          <ul class="skill-tag-list" aria-label="Web development skills">
+            <li class="skill-tag">Semantic HTML5</li>
+            <li class="skill-tag">Modern CSS3 (Flexbox &amp; Grid)</li>
+            <li class="skill-tag">Vanilla JavaScript (ES6+)</li>
+            <li class="skill-tag">Responsive Mobile-First Design</li>
+            <li class="skill-tag">Cross-Browser Consistency</li>
+          </ul>
+        </article>
+
+        <!-- Skill 5: Web Accessibility (WCAG 2.2 AA) -->
+        <article class="skill-card" data-category="dev tools">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+              </svg>
+            </div>
+            <h3>WCAG 2.2 Level AA Accessibility</h3>
+          </div>
+          <p>
+            Prioritizing inclusive web architecture that adheres strictly to modern web accessibility principles.
+          </p>
+          <ul class="skill-tag-list" aria-label="Accessibility competencies">
+            <li class="skill-tag">Keyboard-Only Navigation</li>
+            <li class="skill-tag">Visible Focus Ring Management</li>
+            <li class="skill-tag">ARIA Roles &amp; Live Regions</li>
+            <li class="skill-tag">Contrast Ratios &gt; 4.5:1</li>
+            <li class="skill-tag">Screen Reader Optimization</li>
+            <li class="skill-tag">Reduced-Motion Adaptation</li>
+          </ul>
+        </article>
+
+        <!-- Skill 6: Data & Scientific Stack -->
+        <article class="skill-card" data-category="aiml tools">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+              </svg>
+            </div>
+            <h3>Machine Learning &amp; Data Stack</h3>
+          </div>
+          <p>
+            Python libraries and analytical ecosystems utilized for data preprocessing, matrix manipulation, and classification modeling.
+          </p>
+          <ul class="skill-tag-list" aria-label="Libraries and tools">
+            <li class="skill-tag">Scikit-Learn</li>
+            <li class="skill-tag">NumPy</li>
+            <li class="skill-tag">Pandas</li>
+            <li class="skill-tag">Jupyter Notebooks</li>
+            <li class="skill-tag">Dataset Preprocessing</li>
+          </ul>
+        </article>
+
+        <!-- Skill 7: Developer Tools -->
+        <article class="skill-card" data-category="tools">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+              </svg>
+            </div>
+            <h3>Developer Tools &amp; Version Control</h3>
+          </div>
+          <p>
+            Tooling that drives collaborative software engineering, repository management, and clean code documentation.
+          </p>
+          <ul class="skill-tag-list" aria-label="Developer tools">
+            <li class="skill-tag">Git</li>
+            <li class="skill-tag">GitHub</li>
+            <li class="skill-tag">Visual Studio Code</li>
+            <li class="skill-tag">Command Line / Terminal</li>
+            <li class="skill-tag">Markdown Documentation</li>
+          </ul>
+        </article>
+
+        <!-- Skill 8: Engineering Practices -->
+        <article class="skill-card" data-category="tools">
+          <div class="skill-card-header">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+            </div>
+            <h3>Engineering Practices &amp; Ethics</h3>
+          </div>
+          <p>
+            Soft skills, ethical perspectives, and discipline in developing robust computational tools.
+          </p>
+          <ul class="skill-tag-list" aria-label="Professional practices">
+            <li class="skill-tag">Analytical Problem Solving</li>
+            <li class="skill-tag">Data-Driven Decision Making</li>
+            <li class="skill-tag">Ethical Machine Learning</li>
+            <li class="skill-tag">Technical Communication</li>
+            <li class="skill-tag">Continuous Academic Learning</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- Placeholder Section for Future Coursework & Competencies -->
+      <section class="section" aria-labelledby="future-skills-heading">
+        <header class="section-header">
+          <span class="section-badge">Roadmap</span>
+          <h2 id="future-skills-heading">Upcoming Technical Horizons</h2>
+          <p>
+            As I progress through my B.Tech curriculum at Rajalakshmi Institute of Technology, upcoming competencies and elective specializations will be integrated here.
+          </p>
+        </header>
+
+        <div class="placeholder-notice" role="note" aria-label="Upcoming skills placeholder">
+          <strong>[Editable Placeholder] Planned Coursework &amp; Elective Horizons</strong>
+          <p class="mb-sm">
+            You can document future semester subjects and project domains here as you complete them:
+          </p>
+          <ul class="list-styled">
+            <li><em>[Placeholder: Deep Learning &amp; Neural Architectures (CNNs, RNNs, Transformers)]</em></li>
+            <li><em>[Placeholder: Natural Language Processing (NLP)]</em></li>
+            <li><em>[Placeholder: Cloud Computing &amp; Model Deployment (AWS, GCP, Docker)]</em></li>
+            <li><em>[Placeholder: Computer Vision Applications]</em></li>
+          </ul>
+        </div>
+
+        <div class="callout-banner">
+          <div>
+            <h3>Want to see these skills in practice?</h3>
+            <p>Explore featured code implementations and algorithmic analyses.</p>
+          </div>
+          <div class="btn-group">
+            <a href="projects.html" class="btn btn-primary">Browse Project Implementations</a>
+            <a href="contact.html" class="btn btn-secondary">Inquire About Collaboration</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Semantic Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Hemabala J</h2>
+          <p>
+            B.Tech in Artificial Intelligence and Machine Learning from Rajalakshmi Institute of Technology, Chennai. Focused on AI, ML, and Software Engineering.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Technical Skills</a></li>
+            <li><a href="projects.html">Projects &amp; Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="footer-nav-title">Connect</h3>
+          <p class="mb-sm">Follow and connect via professional profiles:</p>
+          <ul class="social-links" aria-label="Social media profiles">
+            <li>
+              <a href="https://linkedin.com/in/hemabala-j-9b0033326" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hemabala-bfs" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hemabala_1806/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile of Hemabala J (opens in a new window)">
+                <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hemabala J. All rights reserved.</p>
+        <a href="#main-content" class="back-to-top-btn">
+          Back to top
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

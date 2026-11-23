@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" role="img" aria-labelledby="avatarTitle avatarDesc">
+  <title id="avatarTitle">Developer Illustration representing Hemabala J</title>
+  <desc id="avatarDesc">A modern, professional vector graphic depicting a developer working on artificial intelligence, machine learning algorithms, and software development.</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0b18" />
+      <stop offset="50%" stop-color="#1e1938" />
+      <stop offset="100%" stop-color="#0d0b18" />
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="codeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05" />
+    </linearGradient>
+    <clipPath id="avatarCircle">
+      <circle cx="200" cy="200" r="185" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer Border & Background -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#primaryGlow)" stroke-width="4" stroke-dasharray="6 4" />
+  <circle cx="200" cy="200" r="185" fill="url(#bgGradient)" />
+
+  <g clip-path="url(#avatarCircle)">
+    <!-- Ambient Tech Grid / Neural Nodes in Background -->
+    <g opacity="0.25" stroke="#a855f7" stroke-width="1">
+      <line x1="50" y1="100" x2="350" y2="100" />
+      <line x1="50" y1="200" x2="350" y2="200" />
+      <line x1="50" y1="300" x2="350" y2="300" />
+      <line x1="100" y1="50" x2="100" y2="350" />
+      <line x1="200" y1="50" x2="200" y2="350" />
+      <line x1="300" y1="50" x2="300" y2="350" />
+    </g>
+
+    <!-- Neural Network Graph Accents -->
+    <g stroke="#c084fc" stroke-width="1.5" opacity="0.5">
+      <line x1="80" y1="120" x2="130" y2="80" />
+      <line x1="130" y1="80" x2="180" y2="130" />
+      <line x1="270" y1="90" x2="320" y2="140" />
+      <line x1="320" y1="140" x2="330" y2="80" />
+      <circle cx="80" cy="120" r="4" fill="#a855f7" />
+      <circle cx="130" cy="80" r="4" fill="#c084fc" />
+      <circle cx="180" cy="130" r="4" fill="#818cf8" />
+      <circle cx="270" cy="90" r="4" fill="#c084fc" />
+      <circle cx="320" cy="140" r="4" fill="#a855f7" />
+    </g>
+
+    <!-- Torso / Shoulders -->
+    <path d="M110 390 C110 310, 150 275, 200 275 C250 275, 290 310, 290 390 Z" fill="#2d2250" />
+    <path d="M140 390 C140 330, 170 305, 200 305 C230 305, 260 330, 260 390 Z" fill="#1c1634" />
+    
+    <!-- Collar & Neck -->
+    <path d="M185 240 L215 240 L220 280 L180 280 Z" fill="#ede9fe" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="195" rx="52" ry="60" fill="#fbd38d" />
+
+    <!-- Hair -->
+    <path d="M145 190 C145 130, 170 120, 200 120 C230 120, 255 130, 255 190 C250 180, 240 170, 230 168 C220 166, 180 166, 170 168 C160 170, 150 180, 145 190 Z" fill="#1a1228" />
+    
+    <!-- Modern Tech Glasses -->
+    <rect x="165" y="180" width="28" height="18" rx="4" fill="none" stroke="#c084fc" stroke-width="2.5" />
+    <rect x="207" y="180" width="28" height="18" rx="4" fill="none" stroke="#c084fc" stroke-width="2.5" />
+    <line x1="193" y1="188" x2="207" y2="188" stroke="#c084fc" stroke-width="2.5" />
+    
+    <!-- Friendly Smile -->
+    <path d="M190 225 Q200 233 210 225" fill="none" stroke="#78350f" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Code overlay card floating near bottom -->
+    <rect x="80" y="320" width="240" height="60" rx="8" fill="#151226" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="98" cy="335" r="4" fill="#f43f5e" />
+    <circle cx="112" cy="335" r="4" fill="#fbbf24" />
+    <circle cx="126" cy="335" r="4" fill="#34d399" />
+    <text x="98" y="362" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc">&gt; AI_ML.predict()</text>
+  </g>
+</svg>
